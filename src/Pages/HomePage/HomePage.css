@@ -1,0 +1,26 @@
+.landing {
+    position: absolute;
+    margin-top: 75px;
+    height: calc(100% - var(margin-top));
+    display: flex;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto auto;
+}
+
+.intro h1 {
+    font-family: 'Gill Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 82px;
+}
+
+.cover-img {
+    width: 50%;
+    height: calc(100% - 75px);
+}
