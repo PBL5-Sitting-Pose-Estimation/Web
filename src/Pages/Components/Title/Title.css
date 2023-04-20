@@ -15,8 +15,11 @@
     margin: auto 0px;
 }
 
+.camera-btn-container {
+    margin-left: auto !important;
+}
+
 button {
-    margin-left: auto!important;
     margin-right: 30px;
     height: 30px;
     padding: 0 15px !important;

@@ -1,5 +1,5 @@
 import posee from '../../asset/posee.jpg'
-import Title from './Title/Title'
+import Title from '../Components/Title/Title'
 import './HomePage.css'
 
 const HomePage = () => {

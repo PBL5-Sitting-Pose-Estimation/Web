@@ -3,6 +3,7 @@ import Login from '../Pages/Login/Login'
 import DashBoard from '../Pages/DashBoard/DashBoard'
 import HomePage from '../Pages/HomePage/HomePage'
 import Register from '../Pages/Register/Register'
+import Report from "../Pages/Report/Report";
 
 export const router = createBrowserRouter([
     {
@@ -20,5 +21,9 @@ export const router = createBrowserRouter([
     {
         path: "/Register",
         element: <Register />
+    },
+    {
+        path: '/Report',
+        element: <Report />
     }
 ])

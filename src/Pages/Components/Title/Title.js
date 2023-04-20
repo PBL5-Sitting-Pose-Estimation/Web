@@ -7,7 +7,9 @@ const Title = () => {
     return (
         <div className='title'>
             <h2 className='logo'>Posee</h2>
-            <Button className='camera-btn' variant='light' size='lg'>CAMERA</Button>
+            <Link to='/Report' className='camera-btn-container'>
+                <Button className='camera-btn' variant='light' size='lg'>CAMERA</Button>
+            </Link>
             <Link to='/Login'>LOGIN</Link> 
             <div style={{backgroundColor: 'black', width: '3px', height: '40px'}}></div>
             <Link to='/Register'>REGISTER</Link>
