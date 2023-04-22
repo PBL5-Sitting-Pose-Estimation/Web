@@ -48,8 +48,8 @@ const Login = () => {
             <div className='form-container'>
                 <Form onSubmit={login}>
                     <Form.Group className='login-container'>
-                        <Form.Control placeholder='username' name='username' onChange={usernameChange} className='username-container' />
-                        <Form.Control placeholder='password' name='password' onChange={passwordChange} className='password-container' type='password' />
+                        <Form.Control placeholder='username' name='username' onChange={usernameChange} className='username-container' autoComplete='off'/>
+                        <Form.Control placeholder='password' name='password' onChange={passwordChange} className='password-container' autoComplete='off' type='password' />
                         <Form.Control type='submit' className='btn-submit' value='Login' />
                     </Form.Group>
                 </Form>

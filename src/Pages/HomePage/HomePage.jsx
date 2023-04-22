@@ -1,8 +1,15 @@
+import { useContext, useEffect } from 'react'
 import posee from '../../asset/posee.jpg'
 import Title from '../Components/Title/Title'
 import './HomePage.css'
+import { AuthContext } from '../../Context/AuthContext'
 
 const HomePage = () => {
+    const authContext = useContext(AuthContext)
+
+    useEffect(() => {
+        authContext.loadUser()
+    }, [])
 
     return (
         <div>

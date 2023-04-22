@@ -1,10 +1,25 @@
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 const DashBoard = () => {
 
+    const [count, setCount] = useState(0)
+
+    useEffect(() => {
+        console.log(count)
+    }, [])
+
+    useEffect(() => {
+        console.log("hello")
+    })
+
+    const action = () => {
+        setCount(count + 1)
+    }
+
     return (
         <div>
-            <Link to="/">back</Link>
+            <button onClick={action}></button>
         </div>
     )
 }

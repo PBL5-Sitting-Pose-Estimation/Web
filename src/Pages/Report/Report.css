@@ -1,0 +1,10 @@
+.landing{
+    display: flex;
+    width: 100%;
+    padding-top: 10px
+}
+
+.img{
+    margin: auto auto;
+    border: 2px solid red;
+}
