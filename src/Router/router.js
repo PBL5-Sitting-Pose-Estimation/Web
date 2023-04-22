@@ -4,26 +4,33 @@ import DashBoard from '../Pages/DashBoard/DashBoard'
 import HomePage from '../Pages/HomePage/HomePage'
 import Register from '../Pages/Register/Register'
 import Report from "../Pages/Report/Report";
+import Loader from "../Loader"
 
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <HomePage />
+        element: <Loader />,
+        errorElement: <Loader />
     },
     {
-        path: "/DashBoard",
+        path: "/Web/",
+        element: <HomePage />,
+        errorElement: <HomePage />
+    },
+    {
+        path: "/Web/DashBoard",
         element: <DashBoard />
     },
     {
-        path: "/Login",
+        path: "/Web/Login",
         element: <Login />
     },
     {
-        path: "/Register",
+        path: "/Web/Register",
         element: <Register />
     },
     {
-        path: '/Report',
+        path: '/Web/Report',
         element: <Report />
     }
 ])

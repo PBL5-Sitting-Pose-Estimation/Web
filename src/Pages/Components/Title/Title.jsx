@@ -13,16 +13,16 @@ const Title = () => {
 
     const LoginRegister = (
         <>
-            <Link to='/Login'>LOGIN</Link> 
+            <Link to='/Web/Login'>LOGIN</Link> 
             <div style={{backgroundColor: 'black', width: '3px', height: '40px'}}></div>
-            <Link to='/Register'>REGISTER</Link>
+            <Link to='/Web/Register'>REGISTER</Link>
         </>
     )
 
     return (
         <div className='title'>
-            <Link to='/' className='to-home'><h2 className='logo'>Posee</h2></Link>
-            <Link to='/Report' className='camera-btn-container'>
+            <Link to='/Web' className='to-home'><h2 className='logo'>Posee</h2></Link>
+            <Link to='/Web/Report' className='camera-btn-container'>
                 <Button className='camera-btn' variant='light' size='lg'>CAMERA</Button>
             </Link>
             {authContext.getUser().token ? <UserAvatar /> : LoginRegister}
