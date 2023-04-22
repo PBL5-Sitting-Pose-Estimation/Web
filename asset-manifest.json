@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sitting-pose-estimation-app/static/css/main.53679536.css",
+    "main.js": "/sitting-pose-estimation-app/static/js/main.995a9cd1.js",
+    "static/js/787.d1d4a2c2.chunk.js": "/sitting-pose-estimation-app/static/js/787.d1d4a2c2.chunk.js",
+    "static/media/posee.jpg": "/sitting-pose-estimation-app/static/media/posee.b77651dc8fd8792dc041.jpg",
+    "index.html": "/sitting-pose-estimation-app/index.html",
+    "main.53679536.css.map": "/sitting-pose-estimation-app/static/css/main.53679536.css.map",
+    "main.995a9cd1.js.map": "/sitting-pose-estimation-app/static/js/main.995a9cd1.js.map",
+    "787.d1d4a2c2.chunk.js.map": "/sitting-pose-estimation-app/static/js/787.d1d4a2c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53679536.css",
+    "static/js/main.995a9cd1.js"
+  ]
+}
