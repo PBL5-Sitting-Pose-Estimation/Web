@@ -34,7 +34,11 @@ const AuthContextProvider = ({ children }) => {
         return {token, displayName}
     }
 
-    const AuthContextData = {loginUser, loadUser, getUser}
+    const logout = () => {
+        localStorage.removeItem('accessToken')
+    }
+
+    const AuthContextData = {loginUser, loadUser, getUser, logout}
 
     return (
         <AuthContext.Provider value={AuthContextData}>

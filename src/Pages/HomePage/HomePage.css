@@ -1,8 +1,18 @@
-.landing {
+.landing-container {
     position: absolute;
-    margin-top: 75px;
-    height: calc(100% - var(margin-top));
+    top: 75px;
+    height: calc(200% - 130px);
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.landing {
     display: flex;
+    width: 100%;
+    height: calc(50% - 75px);
 }
 
 .intro {
@@ -22,5 +32,5 @@
 
 .cover-img {
     width: 50%;
-    height: calc(100% - 75px);
+    height: 100%;
 }

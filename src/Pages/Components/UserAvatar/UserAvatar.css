@@ -3,3 +3,19 @@
     height: 50px;
     border-radius: 25px;
 }
+
+.dropdown-avatar {
+    position: absolute;
+    visibility: visible;
+    top: 75px;
+    right: 10px;
+    background-color: aquamarine;
+}
+
+.avatar-container:hover .dropdown-avatar {
+    visibility: visible;
+}
+
+.dropdown-item {
+    padding: 5px 0 !important;
+}

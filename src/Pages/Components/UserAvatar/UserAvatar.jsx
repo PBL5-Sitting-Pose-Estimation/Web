@@ -9,8 +9,11 @@ const UserAvatar = () => {
     const authContext = useContext(AuthContext)
 
     return (
-        <div>
-            <img src={ API_URL + 'img/avatar/' + authContext.getUser().token } className='avatar'></img>
+        <div className='avatar-container'>
+            <img src={ API_URL + 'img/avatar/' + authContext.getUser().token } className='avatar' alt=''></img>
+            <div className='dropdown-avatar'>
+                <a href='' onClick={authContext.logout()} className='dropdown-item'>Log Out</a>
+            </div>
         </div>
     )
 }

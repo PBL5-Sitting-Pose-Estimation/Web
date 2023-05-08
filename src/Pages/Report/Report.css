@@ -1,7 +1,14 @@
-.landing{
+.landing-container {
+    position: absolute;
+    top: 75px;
+    height: calc(200% - 150px);
+    width: 100%;
+}
+
+.landing {
     display: flex;
     width: 100%;
-    padding-top: 10px
+    height: calc(50%);
 }
 
 .img{
