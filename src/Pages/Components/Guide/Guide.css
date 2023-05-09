@@ -1,5 +1,6 @@
 .slide {
-    margin-top: 20px;
+    margin-top: 45px;
+    width: 100%;
     height: calc(50% - 75px)!important;
 }
 
@@ -14,6 +15,7 @@
 }
 
 .carousel-item img{
+    width: 80%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;

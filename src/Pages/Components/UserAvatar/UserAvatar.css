@@ -4,16 +4,17 @@
     border-radius: 25px;
 }
 
+.avatar:hover {
+    opacity: 90%;
+    cursor: pointer;
+}
+
 .dropdown-avatar {
     position: absolute;
-    visibility: visible;
+    visibility: hidden;
     top: 75px;
     right: 10px;
     background-color: aquamarine;
-}
-
-.avatar-container:hover .dropdown-avatar {
-    visibility: visible;
 }
 
 .dropdown-item {
