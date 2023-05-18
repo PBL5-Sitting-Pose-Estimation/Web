@@ -26,6 +26,7 @@
     flex-direction: column;
     width: 40%;
     margin: auto auto;
+    user-select: none;
 }
 
 .intro h1 {
@@ -39,6 +40,8 @@
 .cover-img {
     width: 50%;
     height: 100%;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .navigator {
@@ -51,6 +54,7 @@
     flex-direction: column;
     text-align: center;
     font-size: 30px;
+    user-select: none;
 }
 
 .bounce2 {

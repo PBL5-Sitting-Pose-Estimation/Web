@@ -54,11 +54,11 @@ const HomePage = () => {
                         <h1>POSE ESTIMATION</h1>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque officiis dicta consequuntur eius deserunt et quam dolores beatae incidunt fuga! Magni tenetur, eum harum et alias odit quo quasi atque.</p>
                     </div>
-                    <div className='navigator bounce2'>
-                        <p style={{marginBottom: '5px'}}>Scroll down for tutorial</p>
+                    <div className='navigator bounce2' onMouseDown={() => false}>
+                        <p style={{ marginBottom: '5px' }}>Scroll down for tutorial</p>
                         <i className="fa-solid fa-angles-down"></i>
                     </div>
-                    <img src={posee} className='cover-img' alt=''/>
+                    <img src={posee} className='cover-img' alt='' />
                 </div>
                 <Guide />
             </div>

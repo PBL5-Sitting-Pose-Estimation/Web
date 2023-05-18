@@ -5,6 +5,7 @@ import HomePage from '../Pages/HomePage/HomePage'
 import Register from '../Pages/Register/Register'
 import Report from "../Pages/Report/Report";
 import Loader from "../Loader"
+import History from "../Pages/History/History";
 
 export const router = createBrowserRouter([
     {
@@ -32,5 +33,9 @@ export const router = createBrowserRouter([
     {
         path: '/Web/Report',
         element: <Report />
+    },
+    {
+        path: '/Web/History',
+        element: <History />
     }
 ])
