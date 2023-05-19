@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import axios from "axios";
 import { API_URL } from "../Utils/constants";
 
@@ -21,7 +21,7 @@ const AuthContextProvider = ({ children }) => {
             }
             return res.data;
         } catch(err) {
-            if(err.response.data) return err.response.data;
+            if(err.response.data) return err.response.data
             else return { success: false, message: err.message }
         }
     }

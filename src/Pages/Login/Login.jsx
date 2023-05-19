@@ -14,9 +14,7 @@ const Login = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 
-    const [error, setError] = useState({
-
-    })
+    const [error, setError] = useState('')
 
     const usernameChange = (event) => {
         setUsername(event.target.value)
@@ -28,6 +26,7 @@ const Login = () => {
 
     const login = async (event) => {
         event.preventDefault()
+        
         try {
             const loginData = await authContext.loginUser(username, password);
             console.log(loginData);
