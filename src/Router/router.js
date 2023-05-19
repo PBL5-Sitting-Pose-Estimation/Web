@@ -6,6 +6,7 @@ import Register from '../Pages/Register/Register'
 import Report from "../Pages/Report/Report";
 import Loader from "../Loader"
 import History from "../Pages/History/History";
+import FeedBack from "../Pages/History/FeedBack/FeedBack";
 
 export const router = createBrowserRouter([
     {
@@ -16,7 +17,7 @@ export const router = createBrowserRouter([
     {
         path: "/Web/",
         element: <HomePage />,
-        errorElement: <HomePage />
+        errorElement: <Loader />
     },
     {
         path: "/Web/DashBoard",
@@ -36,6 +37,12 @@ export const router = createBrowserRouter([
     },
     {
         path: '/Web/History',
-        element: <History />
+        element: <History />,
+        children: [
+            {
+                path: '/Web/History/:id',
+                element: <FeedBack />
+            }
+        ]
     }
 ])

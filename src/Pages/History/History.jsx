@@ -4,6 +4,7 @@ import { API_URL } from "../../Utils/constants"
 import HistoryItem from './Item/HistoryItem'
 import './History.css'
 import Title from "../Components/Title/Title"
+import { Outlet } from "react-router"
 
 const History = () => {
     const [history, setHistory] = useState([])
@@ -16,14 +17,17 @@ const History = () => {
     }, [])
 
     return (
-        <div>
-            <Title />
-            <div className="history-container">
-                {history.map(item => {
-                    return <HistoryItem key={item._id} item={item} />
-                })}
+        <>
+            <div id="hc">
+                <Title />
+                <div className="history-container">
+                    {history.map(item => {
+                        return <HistoryItem key={item._id} item={item} />
+                    })}
+                </div>
             </div>
-        </div>
+            <Outlet />
+        </>
     )
 }
 

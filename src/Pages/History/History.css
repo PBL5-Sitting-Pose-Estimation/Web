@@ -35,3 +35,51 @@
 .history-item:hover .btn-container {
     visibility: visible;
 }
+
+.confirm-panel {
+    position: absolute;
+    display: flex;
+    z-index: 100;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+}
+
+.confirm-panel img{
+    height: 100%;
+}
+
+.confirm-panel .form-container{
+    position: absolute;
+    top: 60px;
+    right: 5px;
+    width: 200px;
+    height: calc(100% - 120px);
+    display: flex;
+    flex-direction: column;
+}
+
+.confirm-panel .btn-return{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-decoration: none;
+    color: red;
+    border: 2px solid red;
+    font-weight: 800;
+    padding: 0px 5px;
+}
+
+#react-select-4-listbox{
+    position: absolute;
+    top: 40px;
+}
+
+.form-container button{
+    margin-top: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+}
