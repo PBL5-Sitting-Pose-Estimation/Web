@@ -16,7 +16,7 @@
     height: calc(50% - 10px);
 }
 
-.img{
+.img {
     margin: auto auto;
     border: 2px solid red;
 }
@@ -38,8 +38,9 @@
 }
 
 .cover-img {
-    width: 50%;
-    height: 100%;
+    margin: auto auto;
+    height: 60%;
+    /* height: 100%; */
     user-select: none;
     -webkit-user-drag: none;
 }
