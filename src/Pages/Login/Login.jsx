@@ -26,14 +26,14 @@ const Login = () => {
 
     const login = async (event) => {
         event.preventDefault()
-        
+
         try {
             const loginData = await authContext.loginUser(username, password);
             console.log(loginData);
-            if(loginData.success){
+            if (loginData.success) {
                 navigate("/")
             }
-            else{
+            else {
 
             }
         }
@@ -51,20 +51,18 @@ const Login = () => {
                 <Form onSubmit={login} className='form'>
                     <h1>LOGIN</h1>
                     <Form.Group className='login-container'>
-                        <Form.Control placeholder='Username' name='username' onChange={usernameChange} className='field-container' autoComplete='off'/>
+                        <Form.Control placeholder='Username' name='username' onChange={usernameChange} className='field-container' autoComplete='off' />
                         <Form.Control placeholder='Password' name='password' onChange={passwordChange} className='field-container' autoComplete='off' type='password' />
                         <Form.Control type='submit' className='btn-submit' value='Login' />
                     </Form.Group>
 
                     <Form.Group className='nav-group'>
                         <div className="nav-container">
-                        Back to homepage? <Link to="/">Hompage</Link>
+                            Back to homepage? <Link to="/Web">Homepage</Link>
                         </div>
                         <div className="nav-container">
-                        Don't have an account? <Link to="/Register">Register</Link>
+                            Don't have an account? <Link to="/Web/Register">Register</Link>
                         </div>
-                        
-                        
                     </Form.Group>
                 </Form>
             </div>

@@ -6,6 +6,7 @@ import photo from '../../asset/login.png'
 
 import { API_URL } from '../../Utils/constants'
 import { useNavigate } from 'react-router'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
     const [username, setUsername] = useState('')
@@ -56,6 +57,14 @@ const Login = () => {
                         <Form.Control placeholder='Password' name='password' onChange={passwordChange} className='field-container' type='password' />
                         <Form.Control placeholder='Re-confirm password' name='confirm' onChange={confirmChange} className='field-container' type='password' />
                         <Form.Control type='submit' className='btn-submit' value='Register' />
+                    </Form.Group>
+                    <Form.Group className='nav-group'>
+                        <div className="nav-container">
+                            Back to homepage? <Link to="/Web">Homepage</Link>
+                        </div>
+                        <div className="nav-container">
+                            Already had an account? <Link to="/Web/Login">Sign in</Link>
+                        </div>
                     </Form.Group>
                 </Form>
             </div>
