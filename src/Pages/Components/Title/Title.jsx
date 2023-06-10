@@ -13,7 +13,7 @@ const Title = () => {
 
     const LoginRegister = (
         <>
-            <Link to='/Web/Login'>LOGIN</Link> 
+            <Link to='/Web/Login' style={{marginLeft: "auto"}}>LOGIN</Link> 
             <div style={{backgroundColor: 'black', width: '3px', height: '40px'}}></div>
             <Link to='/Web/Register'>REGISTER</Link>
         </>
@@ -22,9 +22,9 @@ const Title = () => {
     return (
         <div className='title'>
             <Link to='/Web' className='to-home'><h2 className='logo'>Posee</h2></Link>
-            <Link to='/Web/Report' className='camera-btn-container'>
+            {authContext.getUser().token && <Link to='/Web/Report' className='camera-btn-container'>
                 <Button className='camera-btn' variant='light' size='lg'>CAMERA</Button>
-            </Link>
+            </Link>}
             {authContext.getUser().token ? <UserAvatar /> : LoginRegister}
         </div>
     )
